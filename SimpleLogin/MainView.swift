@@ -18,10 +18,10 @@ struct MainView: View {
          
          Button(action: {viewModel.signOut()}) {
             Text("Sign out")
-               .padding()
                .foregroundColor(Color.white)
+               .frame(width: 200, height: 50)
                .background(buttonColor)
-               .padding()
+               .cornerRadius(40)
          }
       }
    }
