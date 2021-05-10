@@ -9,6 +9,8 @@ import SwiftUI
 import FirebaseAuth
 
 struct MainView: View {
+   @EnvironmentObject var viewModel: AppViewModel
+   
    var body: some View {
       VStack {
          Text("You are signed in")
