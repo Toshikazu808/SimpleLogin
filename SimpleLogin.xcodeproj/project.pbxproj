@@ -13,6 +13,7 @@
 		BC7856412648F4FF00A47857 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC7856402648F4FF00A47857 /* Preview Assets.xcassets */; };
 		BC7856492648F5D900A47857 /* SigninView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7856482648F5D900A47857 /* SigninView.swift */; };
 		BC78564B2648F5FC00A47857 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC78564A2648F5FC00A47857 /* SignupView.swift */; };
+		BCE2567126499F3F00563F98 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE2567026499F3F00563F98 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC7856422648F4FF00A47857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC7856482648F5D900A47857 /* SigninView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninView.swift; sourceTree = "<group>"; };
 		BC78564A2648F5FC00A47857 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		BCE2567026499F3F00563F98 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				BC78563B2648F4FD00A47857 /* ContentView.swift */,
 				BC7856482648F5D900A47857 /* SigninView.swift */,
 				BC78564A2648F5FC00A47857 /* SignupView.swift */,
+				BCE2567026499F3F00563F98 /* MainView.swift */,
 				BC78563D2648F4FF00A47857 /* Assets.xcassets */,
 				BC7856422648F4FF00A47857 /* Info.plist */,
 				BC78563F2648F4FF00A47857 /* Preview Content */,
@@ -147,6 +150,7 @@
 				BC78564B2648F5FC00A47857 /* SignupView.swift in Sources */,
 				BC78563C2648F4FD00A47857 /* ContentView.swift in Sources */,
 				BC78563A2648F4FD00A47857 /* SimpleLoginApp.swift in Sources */,
+				BCE2567126499F3F00563F98 /* MainView.swift in Sources */,
 				BC7856492648F5D900A47857 /* SigninView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

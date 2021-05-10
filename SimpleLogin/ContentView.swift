@@ -50,19 +50,8 @@ struct ContentView: View {
    var body: some View {
       NavigationView {
          if viewModel.isSignedIn {
-            VStack {
-               Text("You are signed in")
-                  .padding()
-               
-               Button(action: {viewModel.signOut()}) {
-                  Text("Sign out")
-                     .padding()
-                     .foregroundColor(Color.white)
-                     .background(buttonColor)
-                     .padding()
-               }
-            }
-            .transition(.opacity)
+            MainView()
+               .transition(.opacity)
          } else {
             SigninView()
                .transition(.opacity)
