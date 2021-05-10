@@ -8,23 +8,18 @@
 import SwiftUI
 import FirebaseAuth
 
-let accentColor = Color("AccentColor")
+let accentColors = Color("AccentColor")
 let overlayColor = Color("ColorOverlay")
 let buttonColor = Color("ColorButton")
 
 class AppViewModel: ObservableObject {
    let auth = Auth.auth()
-   
    @Published var signedIn = false
-   
-   var isSignedIn: Bool {
-      return auth.currentUser != nil
-   }
+   var isSignedIn: Bool { return auth.currentUser != nil }
    
    func signIn(email: String, password: String) {
       auth.signIn(withEmail: email, password: password) { [weak self] result, error in
          guard result != nil, error == nil else { return }
-         // Success
          DispatchQueue.main.async {
             self?.signedIn = true
          }
@@ -47,6 +42,7 @@ class AppViewModel: ObservableObject {
    } //: signOut()
    
 } //: AppViewModel
+
 
 struct ContentView: View {
    @EnvironmentObject var viewModel: AppViewModel

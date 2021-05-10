@@ -21,7 +21,7 @@ struct SigninView: View {
             .scaledToFit()
             .frame(width: 150, height: 150)
             .clipShape(Circle())
-            .overlay(Circle().stroke(overlayColor, lineWidth: 3))
+            .overlay(Circle().stroke(accentColors, lineWidth: 3))
          
          VStack {
             TextField("Email", text: $email)
@@ -29,12 +29,14 @@ struct SigninView: View {
                .background(Color(.secondarySystemBackground))
                .autocapitalization(.none)
                .disableAutocorrection(true)
+               .padding(5)
             
             SecureField("Password", text: $password)
                .padding()
                .background(Color(.secondarySystemBackground))
                .autocapitalization(.none)
                .disableAutocorrection(true)
+               .padding(5)
             
             Button(action: {
                guard !email.isEmpty, !password.isEmpty else { return }
@@ -43,15 +45,17 @@ struct SigninView: View {
                Text("Sign in")
                   .foregroundColor(Color.white)
                   .frame(width: 200, height: 50)
-                  .cornerRadius(8)
                   .background(buttonColor)
+                  .cornerRadius(40)                  
             }
             .padding()
             
             NavigationLink("Create account", destination: SignupView())
-               .padding()
-               .background(buttonColor)
                .foregroundColor(Color.white)
+               .frame(width: 200, height: 50)
+               .background(buttonColor)
+               .cornerRadius(40)
+               
          } //: VSTACK
          .padding()
          Spacer()
